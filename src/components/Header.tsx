@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ShoppingBag, Search, Menu, User } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -13,28 +14,30 @@ const Header = () => {
 
           {/* Logo */}
           <div className="flex-1 md:flex-none text-center md:text-left">
-            <h1 className="font-cormorant text-3xl font-bold tracking-wide text-foreground">
-              ELEMENT
-            </h1>
-            <p className="font-libre text-xs text-muted-foreground tracking-widest">
-              by SHRUSHTI BHANDARI
-            </p>
+            <Link to="/">
+              <h1 className="font-cormorant text-3xl font-bold tracking-wide text-foreground">
+                ELEMENT
+              </h1>
+              <p className="font-libre text-xs text-muted-foreground tracking-widest">
+                by SHRUSHTI BHANDARI
+              </p>
+            </Link>
           </div>
 
           {/* Navigation - Desktop */}
           <nav className="hidden md:flex items-center space-x-8 flex-1 justify-center">
-            <a href="#" className="font-libre text-sm tracking-wide text-foreground hover:text-brand-clay transition-colors">
+            <Link to="/collections" className="font-libre text-sm tracking-wide text-foreground hover:text-brand-clay transition-colors">
               Collections
-            </a>
-            <a href="#" className="font-libre text-sm tracking-wide text-foreground hover:text-brand-clay transition-colors">
+            </Link>
+            <Link to="/about" className="font-libre text-sm tracking-wide text-foreground hover:text-brand-clay transition-colors">
               About
-            </a>
-            <a href="#" className="font-libre text-sm tracking-wide text-foreground hover:text-brand-clay transition-colors">
+            </Link>
+            <Link to="/lookbook" className="font-libre text-sm tracking-wide text-foreground hover:text-brand-clay transition-colors">
               Lookbook
-            </a>
-            <a href="#" className="font-libre text-sm tracking-wide text-foreground hover:text-brand-clay transition-colors">
+            </Link>
+            <Link to="/contact" className="font-libre text-sm tracking-wide text-foreground hover:text-brand-clay transition-colors">
               Contact
-            </a>
+            </Link>
           </nav>
 
           {/* Right Actions */}
