@@ -18,6 +18,11 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'cormorant': ['Cormorant Garamond', 'serif'],
+				'playfair': ['Playfair Display', 'serif'],
+				'libre': ['Libre Baskerville', 'serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +66,23 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// ELEMENT Brand Colors
+				brand: {
+					whisper: 'hsl(var(--brand-whisper))',
+					taupe: 'hsl(var(--brand-taupe))',
+					blush: 'hsl(var(--brand-blush))',
+					nude: 'hsl(var(--brand-nude))',
+					clay: 'hsl(var(--brand-clay))',
 				}
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-accent': 'var(--gradient-accent)',
+			},
+			boxShadow: {
+				'elegant': 'var(--shadow-elegant)',
+				'soft': 'var(--shadow-soft)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
